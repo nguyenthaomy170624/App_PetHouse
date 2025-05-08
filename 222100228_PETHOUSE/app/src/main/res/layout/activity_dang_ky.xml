@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangKyActivity">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="116dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_pt" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/luckiest_guy"
+        android:shadowColor="@color/xanhdam"
+        android:shadowDx="4"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:text="PET HOUSE"
+        android:textAlignment="center"
+        android:textColor="@color/xanhsang"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <!-- Lời chào -->
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/agbalumo"
+        android:text="Đăng ký tài khoản"
+        android:textColor="@color/xanhdam"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+    <!-- Nhập Tên -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutName"
+        android:layout_width="347dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/search_shape"
+        app:boxBackgroundMode="none"
+        app:hintTextColor="@color/xanhsang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewWelcome">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:drawableStart="@drawable/size_user"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/agbalumo"
+            android:hint="Nhập tên của bạn"
+            android:textColor="@color/xanhsang"
+            android:textColorHint="@color/xanhsang"
+            android:textColorLink="@color/xanhsang" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Nhập Email -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutEmail"
+        android:layout_width="347dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/search_shape"
+        app:boxBackgroundMode="none"
+        app:hintTextColor="@color/xanhsang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:drawableStart="@drawable/size_mail"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/agbalumo"
+            android:hint="Nhập email của bạn"
+            android:textColor="@color/xanhsang"
+            android:textColorHint="@color/xanhsang"
+            android:textColorLink="@color/xanhsang" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Nhập Mật khẩu -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutPassword"
+        android:layout_width="347dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/search_shape"
+        app:counterTextColor="@color/xanhsang"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/xanhsang"
+        app:passwordToggleDrawable="@drawable/show_password_selector"
+        app:helperTextTextColor="@color/xanhsang"
+        app:hintTextColor="@color/xanhsang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:layoutDirection="ltr"
+            android:drawableStart="@drawable/size_lock"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/agbalumo"
+            android:hint="Nhập mật khẩu"
+            android:inputType="textPassword"
+            android:textColor="@color/xanhsang"
+            android:textColorHint="@color/xanhsang"
+            android:textColorLink="@color/xanhsang" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Nút Đăng Ký -->
+    <Button
+        android:id="@+id/btn_dangky"
+        android:layout_width="347dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="@color/xanhdam"
+        android:text="Đăng ký"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutPassword" />
+
+    <!-- Hoặc -->
+
+    <!-- Đăng ký bằng -->
+
+    <!-- Đăng ký bằng Facebook -->
+
+    <!-- Đăng ký bằng Google -->
+
+    <!-- Bạn đã có tài khoản? -->
+
+    <TextView
+        android:id="@+id/tv_dangnhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:fontFamily="@font/agbalumo"
+        android:text="Bạn đã có tài khoản?"
+        android:textColor="@color/xanhdam"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dangky"
+        app:layout_constraintVertical_bias="0.064" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

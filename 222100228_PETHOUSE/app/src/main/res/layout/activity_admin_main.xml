@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.AdminMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/search_shape"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="52dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/logo_pt" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/agbalumo"
+            android:text="PET HOUSE"
+            android:textAlignment="center"
+            android:textColor="@color/xanhdam"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/search_shape">
+
+        <LinearLayout
+            android:id="@+id/choxuly"
+            android:layout_width="123dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hardwareAccelerated="false"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/pending" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/agbalumo"
+                android:text="Chờ xử ký"
+                android:textAlignment="center"
+                android:textColor="@color/xanhdam"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvchoxuly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/agbalumo"
+                android:hint="10"
+                android:textAlignment="center"
+                android:textColor="@color/xanhsang"
+                android:textColorHint="@color/xanhnhat"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hardwareAccelerated="false"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/completed" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/agbalumo"
+                android:text="Đã giao"
+                android:textAlignment="center"
+                android:textColor="@color/xanhdam"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_dagiao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/agbalumo"
+                android:hint="10"
+                android:textAlignment="center"
+                android:textColor="@color/xanhsang"
+                android:textColorHint="@color/xanhnhat"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hardwareAccelerated="false"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loinhuan" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/agbalumo"
+                android:text="Tổng thu nhập"
+                android:textAlignment="center"
+                android:textColor="@color/xanhdam"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_tongtien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/agbalumo"
+                android:hint="10000000 VND"
+                android:textAlignment="center"
+                android:textColor="@color/xanhsang"
+                android:textColorHint="@color/xanhnhat"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/addsp"
+            android:layout_width="150dp"
+            android:layout_height="85dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/search_shape"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageView9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/baseline_add_circle_24" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agbalumo"
+                android:text="Thêm sản phẩm"
+                android:textAlignment="center"
+                android:textColor="@color/xanhdam"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewsp"
+            android:layout_width="150dp"
+            android:layout_height="85dp"
+            android:background="@drawable/search_shape"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageView11"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/eye" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agbalumo"
+                android:text="Xem tất cả"
+                android:textAlignment="center"
+                android:textColor="@color/xanhdam"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/hoso"
+            android:layout_width="150dp"
+            android:layout_height="85dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/search_shape"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageView12"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agbalumo"
+                android:text="Hồ sơ"
+                android:textAlignment="center"
+                android:textColor="@color/xanhdam"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/adduser"
+            android:layout_width="150dp"
+            android:layout_height="85dp"
+            android:background="@drawable/search_shape"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageView13"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/person_add" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agbalumo"
+                android:text="Thêm tài khoản"
+                android:textAlignment="center"
+                android:textColor="@color/xanhdam"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/order"
+            android:layout_width="150dp"
+            android:layout_height="85dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/search_shape"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageView14"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/shopping_bag" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agbalumo"
+                android:text="Giao hàng"
+                android:textAlignment="center"
+                android:textColor="@color/xanhdam"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logout"
+            android:layout_width="150dp"
+            android:layout_height="85dp"
+            android:background="@drawable/search_shape"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageView15"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/logout" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/agbalumo"
+                android:text="Đăng xuất"
+                android:textAlignment="center"
+                android:textColor="@color/xanhdam"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

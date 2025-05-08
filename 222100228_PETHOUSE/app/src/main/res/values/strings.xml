@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PETHOUSE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">485826857564-cujvb0ir2npkna1q8s2tb2vp1lfkfnl4.apps.googleusercontent.com</string>
+    <string-array name="payment_methods">
+        <item>COD</item>
+        <item>GG Pay</item>
+    </string-array>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_dangnhap" type="id" />
+    <item name="btn_fb" type="id" />
+    <item name="textViewDangKyBang" type="id" />
+    <item name="btn_gg" type="id" />
+    <item name="textViewHoac" type="id" />
+    <item name="btn_dangky" type="id" />
+    <item name="inputLayoutPassword" type="id" />
+    <item name="edtPassword" type="id" />
+    <item name="inputLayoutEmail" type="id" />
+    <item name="edtEmail" type="id" />
+    <item name="inputLayoutName" type="id" />
+    <item name="edtName" type="id" />
+    <item name="textViewWelcome" type="id" />
+    <item name="textViewTitle" type="id" />
+    <item name="imageView" type="id" />
+    <item name="textView18" type="id" />
+    <item name="textView17" type="id" />
+    <item name="btn_dangnhap" type="id" />
+    <item name="textView13" type="id" />
+    <item name="tv_hoi" type="id" />
+    <item name="tv_dangky" type="id" />
+    <item name="btn_taotaikhoan" type="id" />
+</resources>

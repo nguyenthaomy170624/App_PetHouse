@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_pt"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_pt"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".XemBannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LienHeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThongTinPetHouseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChiTietDonHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DaMuaGanDayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.XemTatCaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.TrangThaiDonHangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ThemSanPhamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ThemNguoiDungActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.HoSoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ChoXuLyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThongTinSanPhamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThanhToanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BatDauActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DangNhapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DangKyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChonViTriActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KhoiDongActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+    </application>
+
+</manifest>

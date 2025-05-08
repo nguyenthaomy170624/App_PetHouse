@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/trangChuFragment">
+
+    <fragment
+        android:id="@+id/trangChuFragment"
+        android:name="com.example.pethouse.fragment.TrangChuFragment"
+        android:label="fragment_trang_chu"
+        tools:layout="@layout/fragment_trang_chu" />
+    <fragment
+        android:id="@+id/gioHangFragment"
+        android:name="com.example.pethouse.fragment.GioHangFragment"
+        android:label="fragment_gio_hang"
+        tools:layout="@layout/fragment_gio_hang" />
+    <fragment
+        android:id="@+id/timKiemFragment"
+        android:name="com.example.pethouse.fragment.TimKiemFragment"
+        android:label="fragment_tim_kiem"
+        tools:layout="@layout/fragment_tim_kiem" />
+    <fragment
+        android:id="@+id/lichSuFragment"
+        android:name="com.example.pethouse.fragment.LichSuFragment"
+        android:label="fragment_lich_su"
+        tools:layout="@layout/fragment_lich_su" />
+    <fragment
+        android:id="@+id/hoSoFragment"
+        android:name="com.example.pethouse.fragment.HoSoFragment"
+        android:label="fragment_ho_so"
+        tools:layout="@layout/fragment_ho_so" />
+
+
+</navigation>
